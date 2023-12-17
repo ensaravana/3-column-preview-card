@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --ora:rgb(216, 143, 7);
+    --gre:rgb(34, 133, 111);
+    --grr:rgb(6, 75, 6);
+    --whi: rgba(255, 255, 255, 0.845);
+    --pad:10px;
+}
+.container{
+    height: 350px;
+    width: 600px;
+   
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1.5fr);
+  
+ 
+    position: relative;
+    top: 100px;
+    left: 380px;
+
+}
+.sedan{
+    background-color: var(--ora);
+    display: grid;   
+    
+    
+}
+.sedan .s-icon{
+   align-self: flex-end;
+   
+}
+.sedan .s-name{
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+    justify-self:flex-start;
+    align-self: center;
+}
+.sedan .s-text{
+    color:var(--whi);
+    align-self: flex-start;
+}
+.s-text,.s-name p{
+    padding:var(--pad);
+}
+.sedan .s-button,.Luxury .l-button{
+    justify-self: center;
+    align-self: center;
+    
+}
+.s-button button,.l-button button{
+    border-radius: 20px;
+    font-size:medium;
+    padding: 10px;
+}
+.suvs{
+    background-color: var(--gre);
+ display: grid;
+
+}
+.suvs .su-icon{
+    align-self: flex-end;
+}
+.suvs .su-name{
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+    justify-self:flex-start;
+    align-self: center;
+  
+}
+.suvs .su-text{
+    color:var(--whi);
+    align-self: flex-start;
+
+}
+.suvs .su-button{ justify-self: center;
+    align-self: center;
+    
+
+}
+.su-button button{
+    border-radius: 20px;
+    font-size:medium;
+    padding: 10px;
+}
+.su-text,.su-name p{
+    padding:var(--pad);
+
+}
+.s-text p,.su-text p,.l-text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: small;
+    opacity: 0.6;
+    
+}
+.s-name p,.su-name p,.l-name p{
+    font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+}
+.Luxury{
+    background-color: var(--grr);
+    display: grid;
+}
+.Luxury .l-name{
+    color: white;
+}
+.Luxury .l-text{
+    color: white;
+}
+.l-name p{
+    font-size:x-large;
+    font-weight:bolder;
+}
+.l-text p{
+    padding: var(--pad);
+}
+.Luxury .l-icon{
+    align-self: center;
+}
+
